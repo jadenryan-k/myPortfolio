@@ -1,0 +1,450 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    background:linear-gradient(to right, skyblue,lightgrey);
+    text-emphasis-color: black;
+}
+
+body{
+    min-height: 100vh;
+    min-width: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, skyblue, lightgrey);
+    border-radius: 5px;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+.logo{
+    display: flex;
+    align-items: center; 
+}
+.logo i{
+    color: slateblue;
+    font-size: 28px;
+    margin-right: 3px;
+}
+.logo span{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.logo span:hover{
+    color: slateblue;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: black;
+    font-size: 1.0rem;
+    font-weight: 600;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: slateblue;
+}
+.navbar a.active{
+    color: slateblue;
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: black;
+    font-weight: 600;
+    font-size:1.0rem;
+    transition: all .50s ease;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user i{
+    color: slateblue;
+}
+.main a:hover{
+    color: slateblue;
+}
+#menu-icon{
+    font-size: 35px;
+    color: slateblue;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+@media (max-width: 1280px){
+    header{
+        padding:14px 2%;      
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+@media (max-width: 1280px){
+    #menu-icon{
+      display: block;  
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        height: 39vh;
+        width: 270px;
+        background: slateblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        color: lightskyblue;
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color:lightskyblue;
+    }
+    .navbar.open{
+        right: 2%;        
+    }
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-right: 10%;
+    padding: 5%;
+}
+
+.home-content{
+    max-width: 600px ;
+}
+.home-content h1{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.0;
+}
+.home-content h1 span{
+    font-weight: 700;
+}
+.home-content h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: slateblue ;
+}
+.home-content p{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.home-content .btn{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-image{
+    display: flex;
+    height: 250px;
+    width: 300px;
+    border-radius: 30px;
+    transform: scale(1.2);
+}
+.btn a{
+    width: 73px;
+    height: 50%;
+    border: 2 px solid slateblue;
+    align-items: center;
+    transition: .4s;
+    font-weight: 600;
+    background: transparent;
+    color: slateblue;
+}
+.btn a:hover{
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    background: slateblue;
+    border: 2 px solid slateblue;
+    border-radius: 8px;
+    width: 73px;
+}
+
+
+
+#about{
+    margin-left: 5px;
+    width: 100%;
+    padding: 100px 0px;
+        
+}
+
+.photo{
+    margin-left: 15px;
+    transform: scale(1.19);
+    border-radius: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.text{
+    margin-top: 30px;
+    width: 550px;
+    font-weight: 600;
+
+}
+.photo.maximized{
+    transform: scale(1.55);
+    margin-top: -10px;
+    opacity: 1;
+}
+.about-content h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: slateblue;
+}
+.about-content h5{
+    font-weight: 700;
+    font-size: 25px;
+    color: slateblue;
+}
+.about-content h5 span{
+    color: black;
+}
+.about-content p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.about-content{
+    width: 1130px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text button{
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 13px 30px;
+    text-decoration: none;
+    background: transparent;
+    color: slateblue;
+    border: 2 px solid slateblue;
+    transition: .4s;
+}
+.text button:hover{
+    color: black;
+    font-weight: 600;
+    background: slateblue;
+    border: 2 px solid slateblue;
+    cursor: pointer;
+    border-radius: 30px;
+}
+#service{
+    background: linear-gradient(to bottom right, slateblue, #dca3a3, #fffff0);
+    width: 100%;
+    padding: 100px;
+}
+.title h2{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 370px;
+    width: 335px;
+    padding: 20px 35px;
+    background: linear-gradient(to bottom left, #dca3a3, #fffff0 );
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.;
+    text-align: center;
+    transition: height 0.3s ease;
+}
+.card.expanded{
+    height: 560px;
+}
+.card i{
+    font-size: 50px ;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: slateblue;
+}
+
+.card h5{
+    color: slateblue;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.web p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+
+}
+.hidden{
+    display: none;
+}
+
+.card .button{
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 9px 22px;
+    text-decoration: none;
+    background: transparent;
+    color: slateblue;
+    border: 2 px solid slateblue;
+    transition: .4s;
+
+}
+.card .button:hover{
+    color: black;
+    font-weight: 600;
+    background: slateblue;
+    border: 2 px solid slateblue;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.paragraph{
+    width: 100%;
+    height: 190px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+.paragraph p{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color:black;
+}
+.paragraph span{
+    color: slateblue;
+}
+.socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials a {
+    background: transparent;
+    border: 2px solid slateblue;
+    font-size: 20px;
+    border-radius: 30%;
+    text-decoration: none;
+
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 22px 10px;
+}
+
+.socials a.insta {
+    background: linear-gradient(to bottom right, #833AB4, #F56040, #FFC837);
+    color: white;
+}
+
+.socials a.github {
+    background: #000000;
+    color: white;
+}
+
+.socials a.linked {
+    background: #0A66C2;
+    color: white;
+}
+
+.socials a:hover {
+    background: transparent;
+    transition: all .5s ease;
+    transform: scale(1.2);
+}
+
+.socials a.email {
+    background-color: #D44638;
+}
+
+.socials a.email:hover {
+    background: transparent;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: slateblue;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    width: 500px;
+    line-height: 26px;
+}
+footer span{
+    color: slateblue;
+}
+footer .copyright{
+    font-size: 14px;
+    position: absolute;
+    color: white;
+    bottom: 35px;
+}
