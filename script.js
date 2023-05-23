@@ -19,5 +19,18 @@ readMoreBtn.addEventListener('click', function() {
     card.classList.toggle('expanded');
     showParagraph.classList.toggle('hidden');
 });
-
+let card1 = document.querySelector('.card1');
+let readMoreBtn1 = document.querySelector('.button1');
+let showParagraph1 = document.querySelector('.hidden1');
+readMoreBtn1.addEventListener('click', function(){
+    card1.classList.toggle('expanded');
+    showParagraph1.classList.toggle('hidden1');
+});
+let card2 = document.querySelector('.card2');
+let readMoreBtn2 = document.querySelector('.button2');
+let showParagraph2 = document.querySelector('.hidden2');
+readMoreBtn2.addEventListener('click', function() {
+    card2.classList.toggle('expanded');
+    showParagraph2.classList.toggle('hidden2');
+});
 

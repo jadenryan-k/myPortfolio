@@ -320,6 +320,68 @@ header{
     font-size: 23px;
     margin-bottom: 15px;
 }
+.card1 {
+    height: 370px;
+    width: 335px;
+    padding: 20px 35px;
+    background: linear-gradient(to bottom left, #dca3a3, #fffff0);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.;
+    text-align: center;
+    transition: height 0.3s ease;
+}
+
+.card1.expanded {
+    height: 560px;
+}
+
+.card1 i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: slateblue;
+}
+
+.card1 h5 {
+    color: slateblue;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.card2 {
+    height: 370px;
+    width: 335px;
+    padding: 20px 35px;
+    background: linear-gradient(to bottom left, #dca3a3, #fffff0);
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.;
+    text-align: center;
+    transition: height 0.3s ease;
+}
+
+.card2.expanded {
+    height: 560px;
+}
+
+.card2 i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: slateblue;
+}
+
+.card2 h5 {
+    color: slateblue;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
 .web p{
     font-weight: 600;
     font-size: 16px;
@@ -328,6 +390,12 @@ header{
 
 }
 .hidden{
+    display: none;
+}
+.hidden1{
+    display: none;
+}
+.hidden2{
     display: none;
 }
 
@@ -343,6 +411,46 @@ header{
 
 }
 .card .button:hover{
+    color: black;
+    font-weight: 600;
+    background: slateblue;
+    border: 2 px solid slateblue;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.card1 .button1 {
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 9px 22px;
+    text-decoration: none;
+    background: transparent;
+    color: slateblue;
+    border: 2 px solid slateblue;
+    transition: .4s;
+
+}
+
+.card1 .button1:hover {
+    color: black;
+    font-weight: 600;
+    background: slateblue;
+    border: 2 px solid slateblue;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.card2 .button2 {
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 9px 22px;
+    text-decoration: none;
+    background: transparent;
+    color: slateblue;
+    border: 2 px solid slateblue;
+    transition: .4s;
+
+}
+
+.card2 .button2:hover {
     color: black;
     font-weight: 600;
     background: slateblue;
