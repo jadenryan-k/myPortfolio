@@ -293,7 +293,7 @@ header{
     cursor: pointer;
     border-radius: 30px;
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:850px) {
     .box{
        flex-direction: row;
        flex-wrap: wrap;
@@ -322,43 +322,6 @@ header{
     }
     .card2.card2.expanded {
         height: 760px;
-    }
-}
-@media screen and (max-width:1090px) {
-    .box {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .card.card {
-        height: 360px;
-        padding: 5px 5px;
-        width: 40083943948934px;
-    }
-
-    .card.card.expanded {
-        height: 600px;
-        width: 123000000px;
-    }
-
-    .card1.card1 {
-        height: 410px;
-        padding: 5px 5px;
-        width: 40083943948934px;
-    }
-
-    .card1.card1.expanded {
-        height: 640px;
-    }
-
-    .card2.card2 {
-        height: 400px;
-        padding: 5px 5px;
-        width: 40083943948934px;
-    }
-
-    .card2.card2.expanded {
-        height: 640px;
     }
 }
 

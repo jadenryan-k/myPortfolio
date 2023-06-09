@@ -36,7 +36,7 @@ readMoreBtn2.addEventListener('click', function() {
 
 //Alert Message for screen size 
 
-if (window.matchMedia('(max-width: 460px)').matches) {
+if (window.matchMedia('(max-width: 400px)').matches) {
   window.addEventListener('load', function() {
     alert('This webpage is best viewed on devices with a wider screen.');
   });
