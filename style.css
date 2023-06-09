@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    
 }
 
 :root{
@@ -15,6 +16,13 @@
 body{
     min-height: 100vh;
     min-width: none;
+
+}
+@media screen and (max-width: 1090px){
+    body{
+        font-size: 15px;
+        max-width: 1090px;
+    }
 }
 header{
     position: fixed;
@@ -96,14 +104,15 @@ header{
 }
 @media (max-width: 1280px){
     header{
-        padding:14px 2%;      
+        padding:14px 2%;   
+        transition: 0.2s;   
     }
     .navbar a{
         padding: 5px 0;
         margin: 0px 20px;
     }
 }
-@media (max-width: 1280px){
+@media (max-width: 1090px){
     #menu-icon{
       display: block;  
     }
@@ -113,6 +122,7 @@ header{
         right: -100%;
         height: 39vh;
         width: 270px;
+        opacity: 0.98;
         background: slateblue;
         display: flex;
         flex-direction: column;
@@ -137,6 +147,7 @@ header{
         right: 2%;        
     }
 }
+
 
 .home{
     display: flex;
@@ -201,12 +212,16 @@ header{
 }
 
 
-
+@media screen and (max-width:1090px) {
+    .photo{
+       display: none;
+    }
+}
 #about{
     margin-left: 5px;
     width: 100%;
     padding: 100px 0px;
-        
+            
 }
 
 .photo{
@@ -272,6 +287,27 @@ header{
     cursor: pointer;
     border-radius: 30px;
 }
+@media screen and (max-width:1090px) {
+    .box{
+       flex-direction: row;
+       flex-wrap: wrap;
+    }
+    .card.card.expanded{
+        height: 100vh;
+    }
+    .card1.card1{
+        height: 410px;
+    }
+    .card1.card1.expanded{
+        height: 660px;
+    }
+    .card2.card2{
+        height: 390px;
+    }
+    .card2.card2.expanded {
+        height: 760px;
+    }
+}
 #service{
     background: linear-gradient(to bottom right, slateblue, #dca3a3, #fffff0);
     width: 100%;
@@ -281,7 +317,6 @@ header{
     color: white;
     font-weight: 700;
     font-size: 40px;
-    width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
@@ -458,8 +493,13 @@ header{
     cursor: pointer;
     border-radius: 30px;
 }
-
+@media screen and (max-width:1090px) {
+    .paragraph{
+       text-align: center;
+    }
+}
 .paragraph{
+    margin: 10px;
     width: 100%;
     height: 190px;
     align-items: center;
@@ -477,6 +517,7 @@ header{
 .paragraph span{
     color: slateblue;
 }
+
 .socials {
     display: flex;
     justify-content: space-between;
@@ -525,6 +566,7 @@ header{
 .socials a.email:hover {
     background: transparent;
 }
+
 footer{
     position: relative;
     width: 100%;
