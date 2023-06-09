@@ -34,3 +34,11 @@ readMoreBtn2.addEventListener('click', function() {
     showParagraph2.classList.toggle('hidden2');
 });
 
+//Alert Message for screen size 
+
+if (window.matchMedia('(max-width: 460px)').matches) {
+  window.addEventListener('load', function() {
+    alert('This webpage is best viewed on devices with a wider screen.');
+  });
+}
+
