@@ -2,10 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, 'Times New Roman', Times, serif;
     text-decoration: none;
     list-style: none;
-    
 }
 
 :root{
@@ -147,7 +146,16 @@ header{
         right: 2%;        
     }
 }
-
+@media screen and (max-width:1090px) {
+    .home{
+        text-align: center;
+        
+    }
+    .home-content p{
+        letter-spacing: 0.5px;
+        line-height: 18px;
+    }
+}
 
 .home{
     display: flex;
@@ -214,7 +222,10 @@ header{
 
 @media screen and (max-width:1090px) {
     .photo{
-       display: none;
+        display: none;
+    }
+    #about{
+        text-align: center;
     }
 }
 #about{
