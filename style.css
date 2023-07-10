@@ -169,13 +169,10 @@ header{
 
 .home{
     margin-top: 30px;
-    display: grid;
-    grid-template-columns: 2fr 2.2fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        ". .";
+    display: flex;
+    align-items: center;  
     padding: 5%;
+    height: 100vh;
 }
 
 .image{
